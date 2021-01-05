@@ -16,7 +16,7 @@ app = Flask(__name__)
 def home():
     return "Alive!"
 
-@app.route("/predict", methods = ["GET", "POST"])
+@app.route("/predict", methods = ["POST"])
 def predict_api():
 
     if request.method == "POST":
