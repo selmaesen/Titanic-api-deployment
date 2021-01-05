@@ -6,13 +6,7 @@ RUN mkdir /app
 RUN mkdir /app/docker
 RUN mkdir /app/pipeline
 
-COPY docker /app/docker
-COPY pipeline /app/pipeline
-
-COPY pipeline/model /app/pipeline/model
-COPY pipeline/predict /app/pipeline/predict
-COPY pipeline/preprocessing /app/pipeline/preprocessing
-COPY app.py /app/app.py
+COPY . /app
 
 WORKDIR /app
 
